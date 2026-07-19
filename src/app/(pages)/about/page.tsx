@@ -8,15 +8,6 @@ import { motion } from "framer-motion"
 import { Target, Eye, TrendingUp, Award, Users, Rocket, Heart, Brain } from "lucide-react"
 
 const TIMELINE = [
-  { year: "2020", event: "EDVOLS Founded", description: "Started with a vision to transform placement preparation using AI technology." },
-  { year: "2021", event: "AI Mock Interview Launch", description: "Launched first AI-powered mock interview platform with real-time evaluation." },
-  { year: "2022", event: "5,000+ Students", description: "Crossed 5,000 active students across 50+ institutions in India." },
-  { year: "2023", event: "Full Platform Suite", description: "Expanded to complete placement readiness platform with all modules." },
-  { year: "2024", event: "AI Memory Engine", description: "Introduced revolutionary AI Memory Engine for personalized learning." },
-  { year: "2025", event: "20,000+ Students", description: "Serving 20,000+ students across 200+ institutions nationwide." },
-]
-
-const TEAM = [
   { role: "CEO & Founder", initials: "SK", color: "bg-primary" },
   { role: "CTO", initials: "AR", color: "bg-secondary" },
   { role: "Head of AI", initials: "PM", color: "bg-primary" },
@@ -97,26 +88,8 @@ export default function AboutPage() {
                   </StaggerItem>
                 ))}
               </StaggerContainer>
-            </AnimatedSection>
-          </div>
-        </Section>
-
-        <Section className="bg-white">
-          <SectionBackground variant="grid" />
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-primary mb-3">Our Team</h2>
-            <p className="text-muted mb-12 max-w-md mx-auto">Passionate people building the future of placement preparation</p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-3xl mx-auto">
-              {TEAM.map((member) => (
-                <div key={member.role} className="bg-white rounded-2xl p-6 card-shadow border border-border">
-                  <div className={`${member.color} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-3`}>
-                    <span className="text-xl font-bold text-white">{member.initials}</span>
-                  </div>
-                  <h4 className="font-semibold text-primary text-sm">{member.role}</h4>
-                </div>
-              ))}
-            </div>
-          </div>
+        </AnimatedSection>
+        </div>
         </Section>
       </main>
       <Footer />
